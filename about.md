@@ -8,7 +8,7 @@ I'm a web developer from Sawahlunto.
 
 ### More Information
 
-Sometime doing something in Wikipedia.
+Sometimes doing something in Wikipedia.
 
 ### Contact me
 
