@@ -23,7 +23,7 @@ footer-links:
   flickr:
   github: fwzakiy/cdnblogger.github.io
   instagram: fwzakiy
-  linkedin: /in/zakiy
+  linkedin: zakiy
   pinterest: fwzakiy
   rss: https://feeds.feedburner.com/zakiy # just type anything here for a working RSS icon
   twitter: fwzakiy
@@ -41,7 +41,7 @@ google_analytics:
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url:
+url: https://cdn.zakiy.my.id/
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
