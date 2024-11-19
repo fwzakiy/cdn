@@ -12,4 +12,4 @@ Sometimes doing something in Wikipedia.
 
 ### Contact me
 
-[fw@zakiy.my.id](mailto:fw@zakiy.my.id)
+[Kontak](https://www.zakiy.my.id/kontak)
