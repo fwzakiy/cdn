@@ -18,15 +18,15 @@ avatar: https://cdn.zakiy.my.id/images/logo.png
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email: fw@zakiy.my.id
-  facebook: fwzakiy
+  email: 
+  facebook: 
   flickr:
   github: fwzakiy/cdnblogger.github.io
-  instagram: fwzakiy
-  linkedin: zakiy
-  pinterest: fwzakiy
+  instagram: 
+  linkedin: 
+  pinterest: 
   rss: https://feeds.feedburner.com/zakiy # just type anything here for a working RSS icon
-  twitter: fwzakiy
+  twitter: 
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
