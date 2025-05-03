@@ -1,0 +1,55 @@
+# BEGIN Enable Browser Caching & Compression
+<IfModule mod_mime.c>
+    AddType text/css .css
+    AddType application/javascript .js
+    AddType image/bmp .bmp
+    AddType image/gif .gif
+    AddType application/gzip .gz .gzip
+    AddType image/x-icon .ico
+    AddType image/jpeg .jpg .jpeg .jpe
+    AddType image/png .png
+    AddType font/ttf .ttf .ttc
+    AddType application/zip .zip
+    AddType font/woff .woff
+    AddType font/woff2 .woff2
+</IfModule>
+<IfModule mod_expires.c>
+    ExpiresActive On
+    # CSS & JS
+    ExpiresByType text/css "access plus 1 year"
+    ExpiresByType application/javascript "access plus 1 year"
+    ExpiresByType text/javascript "access plus 1 year"
+    # Images
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/webp "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+    ExpiresByType image/x-icon "access plus 1 year"
+    # Fonts
+    ExpiresByType font/ttf "access plus 1 year"
+    ExpiresByType font/woff "access plus 1 year"
+    ExpiresByType font/woff2 "access plus 1 year"
+    # Others
+    ExpiresByType application/zip "access plus 1 year"
+    ExpiresByType application/gzip "access plus 1 year"
+</IfModule>
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/plain text/html text/xml text/css application/xml application/xhtml+xml application/rss+xml application/javascript application/x-javascript application/json
+</IfModule>
+<IfModule mod_headers.c>
+    # Cache control for static files
+    <FilesMatch "\.(ico|jpg|jpeg|png|gif|css|js|woff|woff2|ttf|svg)$">
+        Header unset Set-Cookie
+        Header set Cache-Control "public, max-age=31536000, immutable"
+    </FilesMatch>
+    # Prevent caching for dynamic content (optional)
+    <FilesMatch "\.(php|html)$">
+        Header set Cache-Control "no-cache, no-store, must-revalidate"
+        Header set Pragma "no-cache"
+        Header set Expires 0
+    </FilesMatch>
+    # Enable Vary header for better compatibility with proxies/CDN
+    Header append Vary Accept-Encoding
+</IfModule>
+# END Enable Browser Caching & Compression
