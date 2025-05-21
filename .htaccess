@@ -8,6 +8,7 @@
     AddType image/x-icon .ico
     AddType image/jpeg .jpg .jpeg .jpe
     AddType image/png .png
+    AddType image/webp .webp
     AddType font/ttf .ttf .ttc
     AddType application/zip .zip
     AddType font/woff .woff
@@ -39,7 +40,7 @@
 </IfModule>
 <IfModule mod_headers.c>
     # Cache control for static files
-    <FilesMatch "\.(ico|jpg|jpeg|png|gif|css|js|woff|woff2|ttf|svg)$">
+    <FilesMatch "\.(ico|jpg|jpeg|png|gif|webp|css|js|woff|woff2|ttf|svg)$">
         Header unset Set-Cookie
         Header set Cache-Control "public, max-age=31536000, immutable"
     </FilesMatch>
