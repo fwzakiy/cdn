@@ -53,28 +53,3 @@
     Header append Vary Accept-Encoding
 </IfModule>
 # END Enable Browser Caching & Compression
-
-# ----------------------------------------------------------------------
-# 🛡️ Header Keamanan
-# ----------------------------------------------------------------------
-
-<IfModule mod_headers.c>
-
-    # Content-Security-Policy
-    Header always set Content-Security-Policy "upgrade-insecure-requests;"
-
-    # X-Content-Type-Options
-    # Header set X-Content-Type-Options "nosniff"
-
-    # X-Frame-Options
-    # Header set X-Frame-Options "SAMEORIGIN"
-
-    # X-XSS-Protection
-    # Header set X-XSS-Protection "1; mode=block"
-
-    # Referrer-Policy
-    # Header set Referrer-Policy "strict-origin-when-cross-origin"
-
-    # Permissions-Policy
-    Header always set Permissions-Policy "accelerometer=(),autoplay=(),browsing-topics=(),camera=(),clipboard-read=(),clipboard-write=(),geolocation=(),gyroscope=(),hid=(),interest-cohort=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=()"
-</IfModule>
